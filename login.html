@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1>Tela de login</h1>
+    <input class="btn-block" type="text" id="user" placeholder="digite seu usuário">
+    <input class="btn-block" type="password" id="senha" placeholder="Digite sua senha ">
+    <br>
+    <button  clss="btn-block btn-success onclick="entrar()">Entrar</button>
+    <hr>
+    <div id="tela"></div>
+</body>
+<footer>
+    <script>
+        let user="Eu mesmo", senha="244466666", user1="",senha1=""
+        function entrar(){
+            user1=document.getElementById("user").value;
+            senha1=document.getElementById("senha").value;
+            //alert(user1);
+            //alert(senha1);
+            if(user1!=user){
+                document.getElementById("tela").innerHTML+="Usuário errado🙁<br>"
+            }if(senha1!=senha){
+                document.getElementById("tela").innerHTML+="senha inválida 😁<br>"
+            }
+            if(user1==user&&senha1==senha)
+            document.getElementById("tela").innerHTML="login efetuado com sucesso"
+           }
+    </script>
+</footer>
+</html>

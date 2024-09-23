@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <input type="text" placeholder="DIGITE SEU NOME CONPLETO" id="nome">
+    <br><label for="">Digite quantos anos voce tem</label>
+    <input type="number" min="0" max="100" id="dade"><br>
+    <button onclick="mostra()">enviar</button>
+    <hr>
+    <div id="tela"></div> 
+</body>
+<footer>
+   <let nome="",idade=0>
+   <function mostra>(){
+    nome=doc
+
+   }
+    
+</footer>
+</html>
